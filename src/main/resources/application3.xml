@@ -7,7 +7,7 @@
         <property name="url" value="jdbc:mysql://132.232.70.209:3306/zwy_test"></property>
         <property name="username" value="root"></property>
         <property name="password" value="LCode1996."></property>
-        <property name="driverClassName" value="com.mysql.cj.jdbc.driver"></property>
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
         <property name="minIdle" value="1"></property>
         <property name="maxIdle" value="5"></property>
         <property name="maxActive" value="100"/>
@@ -43,7 +43,7 @@
         <property name="target" ref="studentService"/>
         <property name="transactionAttributes">
             <props>
-                <prop key="save">PROPAGATION_REQUIRED</prop>
+                <prop key="save*">PROPAGATION_REQUIRED</prop>
                 <prop key="update">PROPAGATION_REQUIRED</prop>
                 <prop key="remove">PROPAGATION_REQUIRED</prop>
                 <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>

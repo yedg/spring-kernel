@@ -18,11 +18,11 @@ public class SpringClientTransaction {
         BeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(defaultListableBeanFactory);
 
         beanDefinitionReader.loadBeanDefinitions(resource);
-        StudentService studentService = (StudentService)defaultListableBeanFactory.getBean("studentServiceProxy");
+        StudentService studentService = (StudentService)defaultListableBeanFactory.getBean("studentServiceFactory");
 
         Student student = new Student();
         student.setName("zwy");
-        student.setAge(25);
+        student.setAge(26);
 
         studentService.saveStudent(student);
     }
