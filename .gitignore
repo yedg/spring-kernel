@@ -1,12 +1,32 @@
-# Created by .ignore support plugin (hsz.mobi)
-将删除 .gitignore
-将删除 .gradle/
-将删除 .idea/.gitignore
-将删除 .idea/compiler.xml
-将删除 .idea/gradle.xml
-将删除 .idea/jarRepositories.xml
-将删除 .idea/misc.xml
-将删除 .idea/vcs.xml
-将删除 gradle/
-将删除 gradlew
-将删除 gradlew.bat
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
